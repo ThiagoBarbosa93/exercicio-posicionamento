@@ -27,5 +27,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Posicionamento
 
-- [Visite o projeto online](https://thiagobarbosa93.github.io/posicionamento-bikcraft/)
+- [Visite o projeto online](https://thiagobarbosa93.github.io/exercicio-posicionamento/)
 
