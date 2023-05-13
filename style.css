@@ -73,17 +73,6 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 
-@media(max-width: 1000px) {
-  .container {
-    grid-template-columns: 1fr;
-    max-width: 600px;
-  }
-  .intro::after {
-    display: none;
-  }
-
-}
-
 .intro {
   background: #fff;
   padding: 2.5rem;
@@ -106,6 +95,10 @@ p {
   right: -30px;
 }
 
+.intro-img img {
+  object-fit: cover;
+  height: 100%;
+}
 
 .btn-red {
   background: #e21;
@@ -130,7 +123,7 @@ p {
 }
 
 
-.especificacao {
+.vantagens {
   background: #fff;
   padding: 2.5rem;
 }
@@ -170,5 +163,46 @@ p {
   text-align: center;
   padding: 2.5rem;
   box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .sub {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .header {
+    gap: 30px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .intro {
+    text-align: left;
+    justify-items: start;
+  }
+  .intro::after {
+    display: none;
+  }
+  .sub {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sub {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
 
